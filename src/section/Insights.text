@@ -1,0 +1,132 @@
+import { Box, Flex, Text, Grid, GridItem } from "@chakra-ui/react";
+import React from "react";
+const img1 = "https://images.nature.com/original/magazine-assets/d41586-024-01749-3/d41586-024-01749-3_27173142.jpg";
+const img2 = "https://images.nature.com/original/magazine-assets/d41586-024-01748-4/d41586-024-01748-4_27154344.jpg";
+const img3 = "https://images.nature.com/original/magazine-assets/d41586-024-01595-3/d41586-024-01595-3_27149434.jpg";
+const img4 = "https://images.nature.com/original/magazine-assets/d41586-024-01597-1/d41586-024-01597-1_27149508.jpg";
+const Insights = () => {
+  return (
+    <Flex flexDirection={"column"} pt={"130px"} width={"100%"} alignItems={"center"}>
+        <Flex flexDirection={"column"} maxW={"1280px"}>
+      <Flex justifyContent={"center"} mb={"77px"}>
+        <Text fontSize={"36px"} textAlign={"center"} fontWeight={"bold"}>
+          Latest Insights
+        </Text>
+      </Flex>
+      <Box mx={"50px"}>
+        <Grid
+          h="200px"
+          templateRows="repeat(2, 1fr)"
+          templateColumns="repeat(3, 1fr)"
+          gap={0}
+        >
+          <GridItem colSpan={2} bg="#1F242E">
+            <Flex
+              pt={"33px"}
+              pr={"50px"}
+              pb={"38px"}
+              pl={"35px"}
+              flexDirection={"column"}
+            >
+              <Text
+                color={"#ffffff"}
+                fontSize={"30px"}
+                _hover={{ textDecoration: "underline" }}
+                fontWeight={"bold"}
+                mb={"10px"}
+                textAlign={["center","center","center","start"]}
+              >
+                Three ways two recognize hidden labour in research
+              </Text>
+              <Text
+                color={"#ffffff"}
+                fontSize={"16px"}
+                _hover={{ textDecoration: "underline" }}
+                mb={"10px"}
+              >
+                From designing studies and translating science to technical
+                services, the work of support staff is highly diverse — and it
+                needs merit systems to match.
+              </Text>
+            </Flex>
+            <Flex pt={"33px"} pr={"50px"} pb={"38px"} pl={"35px"} mt={"30px"} flexDirection={"column"}>
+              <Text color={"#ffffff"} fontSize={"16px"} mb={"10px"}>
+                Linda nordling
+              </Text>
+              <Text color={"#ffffff"} fontSize={"16px"} >
+                NEWS | 13 June 2024
+              </Text>
+            </Flex>
+          </GridItem>
+          <GridItem colSpan={1} bgImage={img1} bgSize={"cover"} />
+          <GridItem colSpan={1}>
+            <Box pt={"15px"}>
+          <Box borderBottom={"solid black 1px"} pb={"20px"}>
+          <Flex flexDirection={"column"} mb={"20px"}> 
+            <Box mb={"26px"}>
+            <img src={img2}/>
+            </Box>
+            <Flex>
+                <Text fontSize={"20px"} lineHeight={"26px"} fontWeight={"bold"}  _hover={{ textDecoration: "underline" }}>
+                Open access is working — but researchers in lower-income countries enjoy fewer benefits
+                </Text>
+            </Flex>
+          </Flex>
+          <Flex flexDirection={"column"}>
+            <Text fontSize={"16px"}>Holly Else</Text>
+            <Text fontSize={"16px"} display={"flex"}>
+            <Text fontWeight={"bold"}>NEWS</Text>| 11 JUNE 2024</Text>
+          </Flex>
+          </Box>
+          </Box>
+          </GridItem>
+          <GridItem colSpan={1} >
+          <Box pt={"15px"}>
+          <Box borderBottom={"solid black 1px"}>
+          <Flex flexDirection={"column"} mb={"20px"}> 
+            <Box mb={"26px"}>
+            <img src={img3} height={"136px"}/>
+            </Box>
+            <Flex>
+                <Text fontSize={"20px"} lineHeight={"26px"} fontWeight={"bold"}  _hover={{ textDecoration: "underline" }}>
+               China Seeks global impact and recognition
+                </Text>
+            </Flex>
+          </Flex>
+          <Flex flexDirection={"column"}>
+            <Text fontSize={"16px"}>Simon Baker</Text>
+            <Text fontSize={"16px"} display={"flex"}>
+            <Text fontWeight={"bold"}>NEWS</Text>| 05 JUNE 2024</Text>
+          </Flex>
+          </Box>
+          </Box>
+          </GridItem>
+          <GridItem colSpan={1} >
+          <Box pt={"15px"}>
+          <Box borderBottom={"solid black 1px"} >
+          <Flex flexDirection={"column"} mb={"20px"}> 
+            <Box mb={"26px"}>
+            <img src={img4}/>
+            </Box>
+            <Flex>
+                <Text fontSize={"20px"} lineHeight={"26px"} fontWeight={"bold"}  _hover={{ textDecoration: "underline" }}>
+                China's big-science bet
+                </Text>
+            </Flex>
+          </Flex>
+          <Flex flexDirection={"column"} mb={"28px"}>
+            <Text fontSize={"16px"}>James Mitchell row</Text>
+            <Text fontSize={"16px"} display={"flex"}>
+            <Text fontWeight={"bold"}>NEWS</Text>| 11 JUNE 2024</Text>
+          </Flex>
+          </Box>
+          </Box>
+          </GridItem>
+        </Grid>
+      </Box>
+      </Flex>
+    </Flex>
+  );
+};
+
+export default Insights;
